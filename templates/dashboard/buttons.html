@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+    <style xmlns="http://www.w3.org/1999/html">
+    </style>
+{% endblock %}
+{% block page_title %}
+ Buttons
+{% endblock %}
+{% block content %}
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Widgets</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Small Buttons</h5>
+                                <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+                                <button type="button" class="btn btn-success btn-sm">Success</button>
+                                <button type="button" class="btn btn-danger btn-sm">Danger</button>
+                                <button type="button" class="btn btn-warning btn-sm">Warning</button>
+                                <button type="button" class="btn btn-info btn-sm">Info</button>
+                                <button type="button" class="btn btn-light btn-sm">Light</button>
+                                <button type="button" class="btn btn-dark btn-sm">Dark</button>
+                                <button type="button" class="btn btn-link btn-sm">Link</button>
+                            </div>
+                            <div class="border-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Medium Buttons</h5>
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-success">Success</button>
+                                    <button type="button" class="btn btn-danger">Danger</button>
+                                    <button type="button" class="btn btn-warning">Warning</button>
+                                    <button type="button" class="btn btn-info">Info</button>
+                                    <button type="button" class="btn btn-light">Light</button>
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" class="btn btn-link">Link</button>
+                                </div>
+                            </div>
+                            <div class="border-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Large Buttons</h5>
+                                    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                                    <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                                    <button type="button" class="btn btn-success btn-lg">Success</button>
+                                    <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                                    <button type="button" class="btn btn-warning btn-lg">Warning</button>
+                                    <button type="button" class="btn btn-info btn-lg">Info</button>
+                                    <button type="button" class="btn btn-light btn-lg">Light</button>
+                                    <button type="button" class="btn btn-dark btn-lg">Dark</button>
+                                    <button type="button" class="btn btn-link btn-lg">Link</button>
+                                </div>
+                            </div>
+                            <div class="border-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Outline Buttons</h5>
+                                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success">Success</button>
+                                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- drop down -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Dropdown Buttons</h5>
+                                <div class="bd-example">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                </div>
+                            </div>
+                            <div class="card-body border-top">
+                                <h5 class="card-title">Split Buttons</h5>
+                                <div class="bd-example">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div><!-- /btn-group -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+    <style xmlns="http://www.w3.org/1999/html">
+    </style>
+{% endblock %}
+{% block page_title %}
+ Form
+{% endblock %}
+{% block content %}
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Form Basic</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="card">
+                    <div class="card-body wizard-content">
+                        <h4 class="card-title">Basic Form Example</h4>
+                        <h6 class="card-subtitle"></h6>
+                        <form id="example-form" action="#" class="m-t-40" novalidate="novalidate">
+                            <div role="application" class="wizard clearfix" id="steps-uid-0"><div class="steps clearfix"><ul role="tablist"><li role="tab" class="first done" aria-disabled="false" aria-selected="false"><a id="steps-uid-0-t-0" href="#steps-uid-0-h-0" aria-controls="steps-uid-0-p-0"><span class="number">1.</span> Account</a></li><li role="tab" class="current error" aria-disabled="false" aria-selected="true"><a id="steps-uid-0-t-1" href="#steps-uid-0-h-1" aria-controls="steps-uid-0-p-1"><span class="current-info audible">current step: </span><span class="number">2.</span> Profile</a></li><li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-0-t-2" href="#steps-uid-0-h-2" aria-controls="steps-uid-0-p-2"><span class="number">3.</span> Hints</a></li><li role="tab" class="disabled last" aria-disabled="true"><a id="steps-uid-0-t-3" href="#steps-uid-0-h-3" aria-controls="steps-uid-0-p-3"><span class="number">4.</span> Finish</a></li></ul></div><div class="content clearfix">
+                                <h3 id="steps-uid-0-h-0" tabindex="-1" class="title">Account</h3>
+                                <section id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="body" aria-hidden="true" style="left: -1189.2px; display: none;">
+                                    <label for="userName">User name *</label>
+                                    <label id="userName-error" class="error" for="userName" style="display: none;"></label><input id="userName" name="userName" type="text" class="required form-control valid" aria-invalid="false">
+                                    <label for="password">Password *</label>
+                                    <label id="password-error" class="error" for="password" style="display: none;"></label><input id="password" name="password" type="text" class="required form-control valid validate-equalTo-blur" aria-invalid="false">
+                                    <label for="confirm">Confirm Password *</label>
+                                    <label id="confirm-error" class="error" for="confirm" style="display: none;"></label><input id="confirm" name="confirm" type="text" class="required form-control valid" aria-invalid="false">
+                                    <p>(*) Mandatory</p>
+                                </section>
+                                <h3 id="steps-uid-0-h-1" tabindex="-1" class="title current">Profile</h3>
+                                <section id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="body current" aria-hidden="false" style="left: 0px;">
+                                    <label for="name">First name *</label>
+                                    <label id="name-error" class="error" for="name">This field is required.</label><input id="name" name="name" type="text" class="required form-control error">
+                                    <label for="surname">Last name *</label>
+                                    <label id="surname-error" class="error" for="surname">This field is required.</label><input id="surname" name="surname" type="text" class="required form-control error">
+                                    <label for="email">Email *</label>
+                                    <label id="email-error" class="error" for="email">This field is required.</label><input id="email" name="email" type="text" class="required email form-control error">
+                                    <label for="address">Address</label>
+                                    <input id="address" name="address" type="text" class=" form-control">
+                                    <p>(*) Mandatory</p>
+                                </section>
+                                <h3 id="steps-uid-0-h-2" tabindex="-1" class="title">Hints</h3>
+                                <section id="steps-uid-0-p-2" role="tabpanel" aria-labelledby="steps-uid-0-h-2" class="body" aria-hidden="true" style="display: none;">
+                                    <ul>
+                                        <li>Foo</li>
+                                        <li>Bar</li>
+                                        <li>Foobar</li>
+                                    </ul>
+                                </section>
+                                <h3 id="steps-uid-0-h-3" tabindex="-1" class="title">Finish</h3>
+                                <section id="steps-uid-0-p-3" role="tabpanel" aria-labelledby="steps-uid-0-h-3" class="body" aria-hidden="true" style="display: none;">
+                                    <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required">
+                                    <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+                                </section>
+                            </div><div class="actions clearfix"><ul role="menu" aria-label="Pagination"><li class="" aria-disabled="false"><a href="#previous" role="menuitem">Previous</a></li><li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Next</a></li><li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Finish</a></li></ul></div></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+
+
+{% endblock %}
+
+{% block extra_js %}
+           <script>
+            //***********************************//
+            // For select 2
+            //***********************************//
+            $(".select2").select2();
+
+            /*colorpicker*/
+            $('.demo').each(function () {
+                //
+                // Dear reader, it's actually very easy to initialize MiniColors. For example:
+                //
+                //  $(selector).minicolors();
+                //
+                // The way I've done it below is just for the demo, so don't get confused
+                // by it. Also, data- attributes aren't supported at this time...they're
+                // only used for this demo.
+                //
+                $(this).minicolors({
+                    control: $(this).attr('data-control') || 'hue',
+                    position: $(this).attr('data-position') || 'bottom left',
+
+                    change: function (value, opacity) {
+                        if (!value) return;
+                        if (opacity) value += ', ' + opacity;
+                        if (typeof console === 'object') {
+                            console.log(value);
+                        }
+                    },
+                    theme: 'bootstrap'
+                });
+
+            });
+            /*datwpicker*/
+            jQuery('.mydatepicker').datepicker();
+            jQuery('#datepicker-autoclose').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+
+            var quill = new Quill('#editor', {
+                theme: 'snow'
+            });
+        </script>
+{% endblock %}
